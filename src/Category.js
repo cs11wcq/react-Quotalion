@@ -12,7 +12,7 @@ const Category = ({...category}) =>{
      </div>
      <div className='icon-right'>{category.icon}</div>
 
-     {expand && (category.info + " " + <a href='d'>see more</a>)}
+     {expand && (category.info )}
      <button className='btn' onClick={changeExpand}>
        {expand ? <AiOutlineMinus /> : <AiOutlinePlus />}
      </button>

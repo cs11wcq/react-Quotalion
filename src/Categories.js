@@ -1,13 +1,19 @@
 import logo from './logo.svg'
-import './App.css'
 import Category from './Category'
 import data from './data/categorieslist'
+import { Link } from 'react-router-dom'
 function Categories() {
   return (
     <main>
       <section className='container'>
         {data.map((category) => {
-          return <Category key={category.id} {...category} />
+          return (
+            
+              <div key={category.category_id}>
+                <Category {...category} />
+              </div>
+            
+          )
         })}
       </section>
     </main>

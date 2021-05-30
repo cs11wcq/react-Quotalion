@@ -6,7 +6,7 @@ const Category = ({ ...category }) => {
   const changeExpand = () => {
     setExpand(!expand)
   }
-  const { category_id } = useParams()
+  
   console.log(useParams())
   return (
     <div className='question header'>

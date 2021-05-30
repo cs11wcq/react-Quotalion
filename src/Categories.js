@@ -2,6 +2,8 @@ import logo from './logo.svg'
 import Category from './Category'
 import data from './data/categorieslist'
 import { Link } from 'react-router-dom'
+import './css/index.css'
+
 function Categories() {
   return (
     <main>

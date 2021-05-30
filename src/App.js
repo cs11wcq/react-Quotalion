@@ -5,7 +5,9 @@ import data from './data/categorieslist'
 import routing from './routing'
 function App() {
   return (
-    <div>App</div>
+    <div>
+      <Routing />
+    </div>
   )
 }
 

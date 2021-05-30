@@ -3,7 +3,8 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Categories from './Categories'
 import Home from './Home'
-import Category from './Category'
+import QuoteSlider from './QuoteSlider'
+import ContextAPI from './contextapi'
 const ReactRouterSetup = () => {
   return (
     <Router>
@@ -15,7 +16,7 @@ const ReactRouterSetup = () => {
          <Categories/>
         </Route>
 
-        <Route path='/category/:id' children={<Category/>}></Route>
+        <Route path='/category/:category_id' children={<QuoteSlider/> }></Route>
       </Switch>
     </Router>
   )

@@ -31,7 +31,7 @@ const ContextAPI = () => {
     return quoteMap.get(quoteId)
   })
   console.log(quoteObjects)
-  // const {category_id} = useParams()
+  // const {categoryid} = useParams()
   // const query = new URLSearchParams(useLocation().search)
 
   const [quotes, setQuotes] = useState(quoteObjects)

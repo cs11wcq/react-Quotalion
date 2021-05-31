@@ -6,14 +6,14 @@ import Routing from './routing'
 import AppContext from './AppContext'
 import ContextAPI from './contextapi'
 ReactDOM.render(
-  <div>
-    <ContextAPI />
-  </div>,
-  // <AppContext.Provider>
-  //   <React.StrictMode>
-  //     <Routing />
-  //   </React.StrictMode>
-  // </AppContext.Provider>,
+  // <div>
+  //   <ContextAPI />
+  // </div>,
+  <AppContext.Provider>
+    <React.StrictMode>
+      <Routing />
+    </React.StrictMode>
+  </AppContext.Provider>,
   document.getElementById('root')
 )
 

@@ -9,7 +9,7 @@ import { useParams } from 'react-router-dom'
 
 //set up the context and the maps
 const QuoteContext = React.createContext()
-//k: category_id, v: object containing category_id and children
+//k: category_id, v: object containing category_id and quote_children
 const categoryQuoteMap = new Map()
 //k: quote_id, v: object for that quote
 const quoteMap = new Map()
@@ -27,7 +27,7 @@ categoryList.forEach((obj) => {
 
 const QuoteSlider = () => {
   const { category_id } = useParams()
-  const quoteIds = categoryQuoteMap.get(category_id).children
+  const quoteIds = categoryQuoteMap.get(category_id).quote_children
   console.log(quoteIds)
   const quoteObjects = quoteIds.map((quoteId) => {
     return quoteMap.get(quoteId)

@@ -1,5 +1,5 @@
 //join table
-////category and the quotes (quote ids) that belong to it
+////category and the author
 const categoryQuoteJoin = [
   {
     //list of category ids

@@ -1,7 +1,7 @@
 // import React from 'react'
 // import categoryQuoteJoin from './data/categories-quotes'
 // import {allquotes} from './data/quoteList'
-// //k: category_id, v: object containing category_id and children
+// //k: category_id, v: object containing category_id and quote_children
 // const categoryMap = new Map()
 // //k: quote_id, v: object for that quote
 // const quoteMap = new Map()

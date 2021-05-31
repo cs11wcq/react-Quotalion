@@ -1,9 +1,13 @@
 const authorList = [
   {
-    // category_id: 0,
-    // category: 'general',
-    // icon: <FaBasketballBall />,
-    // info: 'Miscellaneous',
+    author_id: 'Rick',
+    name: 'Rick Riordan',
+    quote_children: ['4d', 'r2', 'r3'],
+  },
+  {
+    author_id: 'Marilyn',
+    name: 'Marilyn Monroe',
+    quote_children: ['m1', 'm2', 'm3'],
   },
 ]
 

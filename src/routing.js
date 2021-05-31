@@ -13,10 +13,13 @@ const ReactRouterSetup = () => {
           <Home />
         </Route>
         <Route path='/categories'>
-         <Categories/>
+          <Categories />
         </Route>
 
-        <Route path='/category/:category_id' children={<QuoteSlider/>}></Route>
+        <Route
+          path='/category/:category_id'
+          children={<QuoteSlider />}
+        ></Route>
       </Switch>
     </Router>
   )

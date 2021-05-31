@@ -9,7 +9,7 @@
 // const QuoteContext = React.createContext()
 
 // // two components - Provider, Consumer
-// //k: category_id, v: object containing category_id and children
+// //k: category_id, v: object containing category_id and quote_children
 // const categoryMap = new Map()
 // //k: quote_id, v: object for that quote
 // const quoteMap = new Map()
@@ -25,7 +25,7 @@
 
 // const ContextAPI = () => {
 //  const { category_id } = useParams()
-//   const quoteIds = categoryMap.get(category_id).children
+//   const quoteIds = categoryMap.get(category_id).quote_children
 //   console.log(quoteIds)
 //   const quoteObjects = quoteIds.map((quoteId) => {
 //     return quoteMap.get(quoteId)

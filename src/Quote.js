@@ -6,22 +6,7 @@ import AppContext from './AppContext'
 import './css/QuoteSlider.css'
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa'
 
-const Quote = ({ img, body, author, topic }) => {
-  // const { category_id } = useParams() //get the string category id from the url (make sure to convert to int)
-  // const appContext = useContext(AppContext)
-  // console.log("Category " + appContext.categoryMap);
-  // console.log('Quote ' + appContext.quoteMap)
-  // const [quotesFromCategory, setQuotesFromCategory] = useState([])
-  // useEffect(() => {
-  //   const category = categoryQuoteJoin.find((obj) => {
-  //     return obj.category_id === category_id
-  //   })
-  //   setQuotesFromCategory(category.children)
-  // },[])
-
-  // console.log(useParams());
-  // console.log(category);
-  // console.log(quotesFromCategory);
+const Quote = ({ img, body, name, date }) => {
 
   return (
     <article className='review'>
@@ -31,9 +16,10 @@ const Quote = ({ img, body, author, topic }) => {
           <FaQuoteRight />
         </span>
       </div>
-      <h4 className='author'>{author}</h4>
-      <p className='job'>{topic}</p>
+      <h4 className='author'>{name}</h4>
+
       <p className='info'>{body}</p>
+      <p className='job'>{date}</p>
       <div className='button-container'>
         <button className='prev-btn'>
           <FaChevronLeft />

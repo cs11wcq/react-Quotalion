@@ -9,11 +9,11 @@ ReactDOM.render(
   // <div>
   //   <ContextAPI />
   // </div>,
-  <AppContext.Provider>
+  // <AppContext.Provider>
     <React.StrictMode>
       <Routing />
-    </React.StrictMode>
-  </AppContext.Provider>,
+    </React.StrictMode>,
+  // </AppContext.Provider>,
   document.getElementById('root')
 )
 

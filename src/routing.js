@@ -16,7 +16,7 @@ const ReactRouterSetup = () => {
          <Categories/>
         </Route>
 
-        <Route path='/category/:category_id' children={<QuoteSlider/> }></Route>
+        <Route path='/category/:category_id' children={<ContextAPI/>}></Route>
       </Switch>
     </Router>
   )

@@ -4,6 +4,7 @@ import Quotes from './Quotes'
 import Quote from './Quote'
 import categoryQuoteJoin from './data/categoryQuoteJoin'
 import categoryList from './data/categoryList'
+import authorList from './data/authorList'
 import { allquotes } from './data/quoteList'
 import { useParams } from 'react-router-dom'
 
@@ -14,7 +15,7 @@ const categoryQuoteMap = new Map()
 //k: quote_id, v: object for that quote
 const quoteMap = new Map()
 const categoryMap = new Map()
-
+const authorMap = new Map()
 categoryQuoteJoin.forEach((item) => {
   categoryQuoteMap.set(item.category_id, item)
 })
@@ -24,18 +25,29 @@ allquotes.forEach((item) => {
 categoryList.forEach((obj) => {
   categoryMap.set(obj.category_id, obj)
 })
+authorList.forEach((obj)=>{
+  authorMap.set(obj.author_id, obj)
+})
+
 
 const QuoteSlider = () => {
   const { category_id } = useParams()
   const quoteIds = categoryQuoteMap.get(category_id).quote_children
-  console.log(quoteIds)
+
   const quoteObjects = quoteIds.map((quoteId) => {
     return quoteMap.get(quoteId)
   })
-  console.log(quoteObjects)
+  //get the author ids for a specific category
+  const authorIds = categoryQuoteMap.get(category_id).author_children
+  console.log('authorIds: ' + authorIds)
+  //get the author objects, which contain the author id, name, and quotes that belong to the author
+  const authorObjects = authorIds.map((authorId) => {
+    return authorMap.get(authorId)
+  })
+  console.log(authorObjects)
 
   return (
-    <QuoteContext.Provider value={{ quoteObjects, categoryQuoteMap, quoteMap }}>
+    <QuoteContext.Provider value={{ quoteObjects, authorObjects }}>
       <main>
         <section className='container'>
           <div className='title'>

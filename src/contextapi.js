@@ -2,8 +2,8 @@
 // import { data } from './data/data'
 // // more components
 // // fix - context api, redux (for more complex cases)
-// import categoriesquotes from './data/categories-quotes'
-// import { allquotes } from './data/quoteslist'
+// import categoryQuoteJoin from './data/categories-quotes'
+// import { allquotes } from './data/quoteList'
 // import { useParams, useLocation } from 'react-router-dom'
 
 // const QuoteContext = React.createContext()
@@ -14,7 +14,7 @@
 // //k: quote_id, v: object for that quote
 // const quoteMap = new Map()
 
-// categoriesquotes.forEach((item) => {
+// categoryQuoteJoin.forEach((item) => {
 //   categoryMap.set(item.category_id, item)
 // })
 // allquotes.forEach((item) => {
@@ -31,13 +31,13 @@
 //     return quoteMap.get(quoteId)
 //   })
 //   console.log(quoteObjects)
-  
+
 //   // const query = new URLSearchParams(useLocation().search)
 
 //   const [quotes, setQuotes] = useState(quoteObjects)
 //   const removeQuote = (id) => {
 //     setQuotes((quotes) => {
-      
+
 //       return quotes.filter((quote) => {
 //        console.log(quote.quote_id + ' ' + id)
 //         return quote.quote_id !== id
@@ -80,7 +80,7 @@
 //           ></SinglePerson>
 //         )
 //       })}
-      
+
 //     </>
 //   )
 // }

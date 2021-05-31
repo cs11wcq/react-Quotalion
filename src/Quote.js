@@ -1,19 +1,19 @@
-import React, {useContext, useState, useEffect } from 'react'
-import categoriesquotes from './data/categories-quotes'
+import React, { useContext, useState, useEffect } from 'react'
+import categoryQuoteJoin from './data/categoryQuoteJoin'
 import { Link, useParams } from 'react-router-dom'
-import allquotes from './data/quoteslist'
+import allquotes from './data/quoteList'
 import AppContext from './AppContext'
 import './css/QuoteSlider.css'
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa'
 
-const Quote = ({img, body, author, topic}) => {
+const Quote = ({ img, body, author, topic }) => {
   // const { category_id } = useParams() //get the string category id from the url (make sure to convert to int)
   // const appContext = useContext(AppContext)
   // console.log("Category " + appContext.categoryMap);
   // console.log('Quote ' + appContext.quoteMap)
   // const [quotesFromCategory, setQuotesFromCategory] = useState([])
   // useEffect(() => {
-  //   const category = categoriesquotes.find((obj) => {
+  //   const category = categoryQuoteJoin.find((obj) => {
   //     return obj.category_id === category_id
   //   })
   //   setQuotesFromCategory(category.children)
@@ -22,7 +22,6 @@ const Quote = ({img, body, author, topic}) => {
   // console.log(useParams());
   // console.log(category);
   // console.log(quotesFromCategory);
-
 
   return (
     <article className='review'>
@@ -36,20 +35,16 @@ const Quote = ({img, body, author, topic}) => {
       <p className='job'>{topic}</p>
       <p className='info'>{body}</p>
       <div className='button-container'>
-        <button className='prev-btn' >
+        <button className='prev-btn'>
           <FaChevronLeft />
         </button>
-        <button className='next-btn' >
+        <button className='next-btn'>
           <FaChevronRight />
         </button>
       </div>
-      <button className='random-btn' >
-        surprise me
-      </button>
+      <button className='random-btn'>surprise me</button>
     </article>
   )
 }
-
-
 
 export default Quote

@@ -2,9 +2,9 @@ import React, { useState, useContext, useEffect } from 'react'
 import './css/QuoteSlider.css'
 import Quotes from './Quotes'
 import Quote from './Quote'
-import categoriesquotes from './data/categories-quotes'
-import categorieslist from './data/categorieslist'
-import { allquotes } from './data/quoteslist'
+import categoryQuoteJoin from './data/categoryQuoteJoin'
+import categoryList from './data/categoryList'
+import { allquotes } from './data/quoteList'
 import { useParams } from 'react-router-dom'
 
 //set up the context and the maps
@@ -15,13 +15,13 @@ const categoryQuoteMap = new Map()
 const quoteMap = new Map()
 const categoryMap = new Map()
 
-categoriesquotes.forEach((item) => {
+categoryQuoteJoin.forEach((item) => {
   categoryQuoteMap.set(item.category_id, item)
 })
 allquotes.forEach((item) => {
   quoteMap.set(item.quote_id, item)
 })
-categorieslist.forEach((obj)=>{
+categoryList.forEach((obj) => {
   categoryMap.set(obj.category_id, obj)
 })
 

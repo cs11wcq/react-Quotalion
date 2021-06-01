@@ -7,9 +7,9 @@ import categoryList from './data/categoryList'
 import authorList from './data/authorList'
 import { allquotes } from './data/quoteList'
 import { useParams } from 'react-router-dom'
+import Error from './Error'
+import QuoteContext from './QuoteContext'
 
-//set up the context and the maps
-const QuoteContext = React.createContext()
 //k: category_id, v: object containing category_id and quote_children
 const categoryQuoteMap = new Map()
 //k: quote_id, v: object for that quote
@@ -25,13 +25,13 @@ allquotes.forEach((item) => {
 categoryList.forEach((obj) => {
   categoryMap.set(obj.category_id, obj)
 })
-authorList.forEach((obj)=>{
+authorList.forEach((obj) => {
   authorMap.set(obj.author_id, obj)
 })
 
-
 const QuoteSlider = () => {
   const { category_id } = useParams()
+  if (categoryQuoteMap.get(category_id) === undefined) return <Error />
   const quoteIds = categoryQuoteMap.get(category_id).quote_children
 
   const quoteObjects = quoteIds.map((quoteId) => {
@@ -45,31 +45,51 @@ const QuoteSlider = () => {
     return authorMap.get(authorId)
   })
   console.log(authorObjects)
-
   return (
-    <QuoteContext.Provider value={{ quoteObjects, authorObjects }}>
+    <QuoteContext.Provider value={{ quoteObjects, quoteMap, authorMap }}>
       <main>
         <section className='container'>
           <div className='title'>
             <h2>{categoryMap.get(category_id).category} quotes</h2>
             <div className='underline'></div>
           </div>
-          <List />
+          <List category_id={category_id} authorObjects={authorObjects} />
         </section>
       </main>
     </QuoteContext.Provider>
   )
 }
 
-const List = () => {
-  const mainData = useContext(QuoteContext)
-  console.log(mainData)
+const List = ({ category_id, authorObjects }) => {
+  console.log(category_id);
+  
+  const q = authorObjects.map((author) => {
+    //find the object whose category id matches
+    const v = author.quote_children.find((obj) => {
+      return obj.category_id === category_id
+    })
+    console.log(v.children);
+    return v
+
+    // return <Quote key={quote.quoteId} {...quote} />
+  })
+  console.log(typeof(q));
+  console.log('q');
+  console.log(q);
+  //get the array of children quote ids for each author
+  const children = q.map((obj)=>{
+    return obj.children
+  })
+  console.log(children[0]);
+
   return (
-    <div>
-      {mainData.quoteObjects.map((quote) => {
-        return <Quote key={quote.quoteId} {...quote} />
+    //each child is an array of quote ids
+      <>
+      {children.map((child)=>{
+        //author's quotes for the current category
+        return <Quote key={new Date().getTime().toString()}authorQuotes={child}/>
       })}
-    </div>
+      </>
   )
 }
 

@@ -39,7 +39,7 @@ export const allquotes = [
     categories: ['2HB'],
     quote_id: '5e',
     body: 'This life is what you make it.',
-    author_id: 'Marilyn Monroe',
+    author_id: 'Marilyn',
     date: 2021,
     img: 'https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260',
   },

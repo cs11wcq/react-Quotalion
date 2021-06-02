@@ -6,7 +6,7 @@ import categoryQuoteJoin from './data/categoryQuoteJoin'
 import categoryList from './data/categoryList'
 import authorList from './data/authorList'
 import { allquotes } from './data/quoteList'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import Error from './Error'
 import QuoteContext from './QuoteContext'
 
@@ -48,6 +48,12 @@ const QuoteSlider = () => {
   return (
     <QuoteContext.Provider value={{ quoteObjects, quoteMap, authorMap }}>
       <main>
+        <h2>
+          <Link to='/'>Home</Link>
+        </h2>
+        <h2>
+          <Link to='/categories'>Categories</Link>
+        </h2>
         <section className='container'>
           <div className='title'>
             <h2>{categoryMap.get(category_id).category} quotes</h2>
@@ -61,35 +67,37 @@ const QuoteSlider = () => {
 }
 
 const List = ({ category_id, authorObjects }) => {
-  console.log('category_id' + category_id);
-  
+  console.log('category_id' + category_id)
+
   const q = authorObjects.map((author) => {
     //find the object whose category id matches
     const v = author.quote_children.find((obj) => {
       return obj.category_id === category_id
     })
-    console.log(v);
+    console.log(v)
     return v
 
     // return <Quote key={quote.quoteId} {...quote} />
   })
-  console.log(typeof(q));
-  console.log('q');
-  console.log(q);
+  console.log(typeof q)
+  console.log('q')
+  console.log(q)
   //get the array of children quote ids for each author
-  const children = q.map((obj)=>{
+  const children = q.map((obj) => {
     return obj.children
   })
-  console.log(children[0]);
+  console.log(children[0])
 
   return (
     //each child is an array of quote ids
-      <>
-      {children.map((child)=>{
+    <>
+      {children.map((child) => {
         //author's quotes for the current category
-        return <Quote key={new Date().getTime().toString()}authorQuotes={child}/>
+        return (
+          <Quote key={new Date().getTime().toString()} authorQuotes={child} />
+        )
       })}
-      </>
+    </>
   )
 }
 

@@ -7,10 +7,8 @@ import './css/index.css'
 function Categories() {
   return (
     <main>
+      <h3 className='Categories'>Categories</h3>
       <section className='container'>
-        <h3>
-          <Link to='/'>Back Home</Link>
-        </h3>
         {data.map((category) => {
           return (
             <div key={category.category_id}>

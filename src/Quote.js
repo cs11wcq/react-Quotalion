@@ -3,7 +3,7 @@ import categoryQuoteJoin from './data/categoryQuoteJoin'
 import { Link, useParams } from 'react-router-dom'
 import allquotes from './data/quoteList'
 import AppContext from './AppContext'
-import './css/QuoteSlider.css'
+
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa'
 import QuoteContext from './QuoteContext'
 

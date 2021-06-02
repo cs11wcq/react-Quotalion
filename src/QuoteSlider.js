@@ -1,5 +1,4 @@
 import React, { useState, useContext, useEffect } from 'react'
-import './css/QuoteSlider.css'
 import Quotes from './Quotes'
 import Quote from './Quote'
 import categoryQuoteJoin from './data/categoryQuoteJoin'
@@ -51,14 +50,15 @@ const QuoteSlider = () => {
         <h2>
           <Link to='/'>Home</Link>
         </h2>
-        <h2>
+        {/* <h2>
           <Link to='/categories'>Categories</Link>
-        </h2>
+        </h2> */}
         <section className='container'>
           <div className='title'>
             <h2>{categoryMap.get(category_id).category} quotes</h2>
             <div className='underline'></div>
           </div>
+          <div></div>
           <List category_id={category_id} authorObjects={authorObjects} />
         </section>
       </main>

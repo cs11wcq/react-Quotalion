@@ -22,18 +22,22 @@ const Category = ({ ...category }) => {
   console.log(useParams())
   return (
     <div className='question header' onClick={link}>
-        <span style={{ display: 'block' }}>
-          <div>
-            <h3>{category.category}</h3>
-          </div>
-          <div className='icon-right'>{category.icon}</div>
-          {elipses()}
-          {expand && category.info}
-          {/* {expand && <WebLink category={category} />} */}
-          <button className='btn' onClick={changeExpand}>
-            {expand ? <AiOutlineMinus /> : <AiOutlinePlus />}
-          </button>
-        </span>
+      <div className='fill'>
+        <img src={category.gif} alt='' />
+      </div>
+
+      <span style={{ display: 'block' }}>
+        <div>
+          <h3>{category.category}</h3>
+        </div>
+        <div className='icon-right'>{category.icon}</div>
+        {elipses()}
+        {expand && category.info}
+        {/* {expand && <WebLink category={category} />} */}
+        <button className='btn' onClick={changeExpand}>
+          {expand ? <AiOutlineMinus /> : <AiOutlinePlus />}
+        </button>
+      </span>
     </div>
   )
 }

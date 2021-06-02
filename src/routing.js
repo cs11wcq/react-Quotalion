@@ -11,15 +11,11 @@ const ReactRouterSetup = () => {
       <Switch>
         <Route exact path='/'>
           <Home />
-        </Route>
-        <Route path='/categories'>
           <Categories />
         </Route>
+        {/* <Route path='/categories'></Route> */}
 
-        <Route
-          path='/category/:category_id'
-          children={<QuoteSlider />}
-        ></Route>
+        <Route path='/category/:category_id' children={<QuoteSlider />}></Route>
       </Switch>
     </Router>
   )

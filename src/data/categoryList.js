@@ -19,12 +19,14 @@ const categoryList = [
     category: 'sports',
     icon: <FaBasketballBall />,
     info: 'Sports quotes from your favorite athletes',
+    gif: 'https://media2.giphy.com/media/xT1R9GVoS8zXZ39EZi/giphy.gif?cid=790b7611c78212ead9337d63aece01df43992df5815052f8&rid=giphy.gif&ct=g',
   },
   {
     category_id: '2HB',
     category: 'heartbreak',
     icon: <FaHeartBroken />,
     info: 'Feeling sad, down, and heartbroken? These quotes will cheer you up.',
+    gif: 'https://media2.giphy.com/media/xT1R9GVoS8zXZ39EZi/giphy.gif?cid=790b7611c78212ead9337d63aece01df43992df5815052f8&rid=giphy.gif&ct=g',
   },
   {
     category_id: '3C',

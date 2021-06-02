@@ -61,14 +61,14 @@ const QuoteSlider = () => {
 }
 
 const List = ({ category_id, authorObjects }) => {
-  console.log(category_id);
+  console.log('category_id' + category_id);
   
   const q = authorObjects.map((author) => {
     //find the object whose category id matches
     const v = author.quote_children.find((obj) => {
       return obj.category_id === category_id
     })
-    console.log(v.children);
+    console.log(v);
     return v
 
     // return <Quote key={quote.quoteId} {...quote} />

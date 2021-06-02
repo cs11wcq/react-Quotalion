@@ -4,8 +4,8 @@ const categoryQuoteJoin = [
   {
     //list of category ids
     category_id: '1A',
-    quote_children: ['1a', '2b', '3c'],
-    author_children: ['henry', 'seth'],
+    quote_children: ['1a', '2b', '3c', 'cb'],
+    author_children: ['Henry', 'Seth', 'Charles'],
   },
   {
     category_id: '2HB',
@@ -27,6 +27,11 @@ const categoryQuoteJoin = [
     category_id: '5FR',
     quote_children: ['m4', 'r4', 'r5', 'm3'],
     author_children: ['Rick', 'Marilyn'],
+  },
+  {
+    category_id: '6Motivation',
+    quote_children: ['cb', 'cb1'],
+    author_children: ['Charles'],
   },
 ]
 

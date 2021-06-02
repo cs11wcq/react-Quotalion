@@ -1,6 +1,7 @@
 import {
   FaBasketballBall,
   FaHeartBroken,
+  FaLevelUpAlt,
   FaPaintBrush,
   FaSadCry,
   FaUserFriends,
@@ -17,7 +18,7 @@ const categoryList = [
     category_id: '1A',
     category: 'sports',
     icon: <FaBasketballBall />,
-    info: 'Here is our alphabetical list of over 800 sports played around the world. In addition to individual sports, the list includes some names of sport groups, styles and codes. There is undoubtedly more sports than are listed here, there are many regional sports, modified rules and new sports being developed every day .',
+    info: 'Sports quotes from your favorite athletes',
   },
   {
     category_id: '2HB',
@@ -42,6 +43,12 @@ const categoryList = [
     category: 'Friendship',
     icon: <FaUserFriends />,
     info: 'These quotes about friendship will get your reminiscing about your childhood bff',
+  },
+  {
+    category_id: '6Motivation',
+    category: 'Motivation',
+    icon: <FaLevelUpAlt />,
+    info: 'Get pumped!',
   },
 ]
 export default categoryList

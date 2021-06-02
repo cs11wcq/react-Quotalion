@@ -151,7 +151,8 @@ Questions
 main {
   min-height: 100vh;
   /* using flex because of better browser support */
-  display: flex;
+  /* display: flex; */
+  text-align: center;
   justify-content: center;
   align-items: center;
 }
@@ -260,7 +261,7 @@ From quote slider.css Reviews
   margin-right: auto;
 }
 .container {
-  width: 50vw;
+  width: 40vw;
   max-width: var(--fixed-width);
   display: block;
 }

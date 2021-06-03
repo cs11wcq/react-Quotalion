@@ -1,8 +1,34 @@
 [
   {
     "category_id": "1A",
-    "quote_children": ["1a", "2b", "3c", "cb"],
-    "author_children": ["Henry", "Seth", "Charles"]
+    "quote_children": ["1a", "2b", "3c", "cb", "Ernie Banks1","Frank Gaines1", "Bruce Jenner1", "Mary Retton1", "Pat Tyson1", "Larry Brown1", "Ken Doherty1", "Laird Hamilton1", "Sandy Koufax1", "Arthur Ashe1", "Andre Agassi1", "Pele1", "Cal Ripken Jr1", "Chris Evert1", "Arnold Schwarzenegger1", "Arnold Palmer1", "Michael Jordan1", "Michael Jordan2", "Picabo Street1", "Lou Brock1", "Gordie Howe1", "Pat Riley1", "Dean Smith1"],
+    "author_children": [
+      "Henry",
+      "Seth",
+      "Charles",
+      "Ernie Banks",
+      "Frank Gaines",
+      "Bruce Jenner",
+      "Mary Retton",
+      "Pat Tyson",
+      "Larry Brown",
+      "Ken Doherty",
+      "Laird Hamilton",
+      "Sandy Koufax",
+      "Arthur Ashe",
+      "Andre Agassi",
+      "Pele",
+      "Cal Ripken Jr",
+      "Chris Evert",
+      "Arnold Schwarzenegger",
+      "Arnold Palmer",
+      "Michael Jordan",
+      "Picabo Street",
+      "Lou Brock",
+      "Gordie Howe",
+      "Pat Riley",
+      "Dean Smith"
+    ] 
   },
   {
     "category_id": "2HB",
@@ -11,14 +37,43 @@
   },
   {
     "category_id": "3C",
-    "quote_children": ["adong1", "adong2"],
-    "author_children": ["Alex"]
+    "quote_children": ["AlexDong1", "AlexDong2"],
+    "author_children": ["Alex Dong"]
   },
 
   {
     "category_id": "4D",
-    "quote_children": [],
-    "author_children": []
+    "quote_children": [
+      "Winston Churchill1",
+      "Steve Jobs1",
+      "Zhuangzi1",
+      "Zhuangzi2",
+      "Zhuangzi3",
+      "Laozi1",
+      "Laozi2",
+      "Laozi3",
+      "Laozi4",
+      "Laozi5",
+      "Laozi6",
+      "Laozi7",
+      "Laozi8",
+      "Laozi9",
+      "Laozi10",
+      "Sun Tzu1",
+      "Sun Tzu2",
+      "Sun Tzu3",
+      "Aristotle1",
+      "Albus DumbleDore1"
+    ],
+    "author_children": [
+      "Winston Churchill",
+      "Steve Jobs",
+      "Zhuangzi",
+      "Laozi",
+      "Sun Tzu",
+      "Aristotle",
+      "Albus DumbleDore"
+    ]
   },
   {
     "category_id": "5FR",

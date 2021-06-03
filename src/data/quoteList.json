@@ -15,14 +15,7 @@
     "date": 2021,
     "img": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
   },
-  {
-    "categories": ["1A"],
-    "quote_id": "3c",
-    "body": "tennis is cool",
-    "author_id": "Seth",
-    "date": 2021,
-    "img": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-  },
+
   {
     "categories": ["1A", "6Motivation"],
     "quote_id": "cb",
@@ -127,22 +120,366 @@
     "author_id": "Marilyn",
     "date": 2021,
     "img": "https://i.pinimg.com/originals/91/46/5f/91465fc2712213d01772c4725c84a16d.jpg"
-  }
-  ,
+  },
   {
     "categories": ["3C"],
-    "quote_id": "adong1",
+    "quote_id": "Alex Dong1",
     "body": "You are trash at defense",
-    "author_id": "Alex",
+    "author_id": "Alex Dong",
     "date": 2021,
     "img": "https://st.depositphotos.com/1001201/1847/i/600/depositphotos_18471223-stock-photo-failure.jpg"
   },
-{
+  {
     "categories": ["3C"],
-    "quote_id": "adong2",
+    "quote_id": "Alex Dong2",
     "body": "You are trash at offense",
-    "author_id": "Alex",
+    "author_id": "Alex Dong",
     "date": 2021,
     "img": "https://media.istockphoto.com/vectors/man-trying-to-shoot-a-basketball-into-a-hoop-he-completely-miss-and-vector-id1303771946?k=6&m=1303771946&s=612x612&w=0&h=yhcu5KEbvozesUNgslnV2Yv4uLBwncdCfOle6BES-Yg="
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Ernie Banks1",
+    "body": "The only way to prove that you’re a good sport is to lose.",
+    "author_id": "Ernie Banks",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-feature-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Frank Gaines1",
+    "body": "Only he who can see the invisible can do the impossible.",
+    "author_id": "Frank Gaines",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Bruce Jenner1",
+    "body": "I always felt that my greatest asset was not my physical ability, it was my mental ability.",
+    "author_id": "Bruce Jenner",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Mary Retton1",
+    "body": "A trophy carries dust. Memories last forever.",
+    "author_id": "Mary Retton",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Pat Tyson1",
+    "body": "Number one is just to gain a passion for running. To love the morning, to love the trail, to love the pace on the track. And if some kid gets really good at it, that’s cool too.",
+    "author_id": "Pat Tyson",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Larry Brown1",
+    "body": "You have to do something in your life that is honorable and not cowardly if you are to live in peace with yourself.",
+    "author_id": "Larry Brown",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Ken Doherty1",
+    "body": "The five S’s of sports training are: stamina, speed, strength, skill, and spirit; but the greatest of these is spirit.",
+    "author_id": "Ken Doherty",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Laird Hamilton1",
+    "body": "Make sure your worst enemy doesn’t live between your own two ears.",
+    "author_id": "Laird Hamilton",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Sandy Koufax1",
+    "body": "I became a good pitcher when I stopped trying to make them miss the ball and started trying to make them hit it.",
+    "author_id": "Sandy Koufax",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Arthur Ashe1",
+    "body": "You are never really playing an opponent. You are playing yourself, your own highest standards, and when you reach your limits, that is real joy",
+    "author_id": "Arthur Ashe",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Andre Agassi1",
+    "body": "What makes something special is not just what you have to gain, but what you feel there is to lose.",
+    "author_id": "Andre Agassi",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Pele1",
+    "body": "The more difficult the victory, the greater the happiness in winning",
+    "author_id": "Pele",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Cal Ripken Jr1",
+    "body": "Stubbornness usually is considered a negative; but I think that trait has been a positive for me.",
+    "author_id": "Cal Ripken Jr",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Chris Evert1",
+    "body": "You’ve got to take the initiative and play your game. In a decisive set, confidence is the difference.",
+    "author_id": "Chris Evert",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Arnold Schwarzenegger1",
+    "body": "The mind is the limit. As long as the mind can envision the fact that you can do something, you can do it, as long as you really believe 100 percent.",
+    "author_id": "Arnold Schwarzenegger",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Arnold Palmer1",
+    "body": "Always make a total effort, even when the odds are against you.",
+    "author_id": "Arnold Palmer",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Michael Jordan1",
+    "body": "“You have to expect things of yourself before you can do them.”",
+    "author_id": "Michael Jordan",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Michael Jordan2",
+    "body": "I’ve missed more than 9,000 shots in my career. I’ve lost almost 300 games. 26 times, I’ve been trusted to take the game winning shot and missed. I’ve failed over and over and over again in my life. And that is why I succeed.",
+    "author_id": "Michael Jordan",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Picabo Street1",
+    "body": "To uncover your true potential you must first find your own limits and then you have to have the courage to blow past them.",
+    "author_id": "Picabo Street",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Lou Brock1",
+    "body": "Show me a guy who’s afraid to look bad, and I’ll show you a guy you can beat every time.",
+    "author_id": "Lou Brock",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Gordie Howe1",
+    "body": "You find that you have peace of mind and can enjoy yourself, get more sleep, and rest when you know that it was a one hundred percent effort that you gave–win or lose.",
+    "author_id": "Gordie Howe",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+
+  {
+    "categories": ["1A"],
+    "quote_id": "Pat Riley1",
+    "body": "Excellence is the gradual result of always striving to do better.",
+    "author_id": "Pat Riley",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "Dean Smith1",
+    "body": "What do do with a mistake: recognize it, admit it, learn from it, forget it.",
+    "author_id": "Dean Smith",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["1A"],
+    "quote_id": "3c",
+    "body": "tennis is cool",
+    "author_id": "Seth",
+    "date": 2021,
+    "img": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+  },
+  {
+    "categories": ["4D"],
+    "quote_id": "Winston Churchill1",
+    "body": "“The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty.” ",
+    "author_id": "Winston Churchill",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["4D"],
+    "quote_id": "Steve Jobs1",
+    "body": "If You Are Working On Something That You Really Care About, You Don’t Have To Be Pushed. The Vision Pulls You. ",
+    "author_id": "Steve Jobs",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["4D"],
+    "quote_id": "Zhuangzi1",
+    "body": "When the shoe fits, the foot is forgotten. When the belt fits, the belly is forgotten. When the heart is right, 'for' and 'against' are forgotten. No drives, no compulsions, no needs, no attractions: Then your affairs are under control. You are a free man.",
+    "author_id": "Zhuangzi",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["4D"],
+    "quote_id": "Zhuangzi2",
+    "body": "Take care of your body, then the rest will automatically become stronger.",
+    "author_id": "Zhuangzi",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["4D"],
+    "quote_id": "Zhuangzi3",
+    "body": "Your mind must become one, do not try to understand with your ears but with your heart. Indeed, not with your heart but with your soul.",
+    "author_id": "Zhuangzi",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["4D"],
+    "quote_id": "Laozi1",
+    "body": "Truly, the greatest gift you have to give is that of your own self-transformation.",
+    "author_id": "Laozi",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["4D"],
+    "quote_id": "Laozi3",
+    "body": "You cannot receive what you don't give. Outflow determines inflow.",
+    "author_id": "Laozi",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["4D"],
+    "quote_id": "Laozi4",
+    "body": "New beginnings are often disguised as painful endings.",
+    "author_id": "Laozi",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["4D"],
+    "quote_id": "Laozi5",
+    "body": "The past has no power to stop you from being present now. Only your grievance about the past can do that. What is grievance? The baggage of old thought and emotion.",
+    "author_id": "Laozi",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["4D"],
+    "quote_id": "Laozi6",
+    "body": "People aren't against you; they are for themselves. The most dangerous risk of all - the risk of spending your life not doing what you want on the bet you can buy yourself the freedom to do it later. He who conquers others is strong, he who conquers himself is mighty.",
+    "author_id": "Laozi",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["4D"],
+    "quote_id": "Laozi7",
+    "body": "Those who are right do not argue. Those who argue are not right.",
+    "author_id": "Laozi",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["4D"],
+    "quote_id": "Laozi8",
+    "body": "Let your workings remain a mystery. Just show people the results.",
+    "author_id": "Laozi",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["4D"],
+    "quote_id": "Laozi9",
+    "body": "If the majority doesn't laugh at you, beware that you must be saying something wrong. When the majority thinks you are a fool, only then is there some possibility of you being a wise man.",
+    "author_id": "Laozi",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["4D"],
+    "quote_id": "Laozi10",
+    "body": "Care about what other people think and you will always be their prisoner.",
+    "author_id": "Laozi",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["4D"],
+    "quote_id": "Sun Tzu1",
+    "body": "Victory is reserved for those who are willing to pay its price.",
+    "author_id": "Sun Tzu",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["4D"],
+    "quote_id": "Sun Tzu2",
+    "body": "It is more important to outhink your enemy, than to outfight him",
+    "author_id": "Sun Tzu",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["4D"],
+    "quote_id": "Sun Tzu3",
+    "body": "It is the unemotional, reserved, calm, detached warrior who wins, not the hothead seeking vengeance and not the ambitious seeker of fortune",
+    "author_id": "Sun Tzu",
+    "date": 2021,
+    "img": "https://www.keepinspiring.me/wp-content/uploads/2019/11/sports-quotes-17-min-1024x770.jpg?ezimgfmt=ng:webp/ngcb47"
+  },
+  {
+    "categories": ["4D"],
+    "quote_id": "Aristotle1",
+    "body": "Excellence is never an accident. It is always the result of high intention, sincere effort, and intelligent execution; it represents the wise choice of many alternatives - choice, not chance, determines your destiny.",
+    "author_id": "Aristotle",
+    "date": 2021,
+    "img": "https://cdn.britannica.com/84/87984-050-7C5547FE/Detail-Roman-copy-portrait-bust-Aristotle-Greek.jpg"
+  },
+  {
+    "categories": ["4D"],
+    "quote_id": "Albus DumbleDore1",
+    "body": "It is our choices, Harry, that show what we truly are, far more than our abilities.",
+    "author_id": "Albus DumbleDore",
+    "date": 2021,
+    "img": "https://poemsbucket.com/wp-content/uploads/2016/09/it-is-our-choices-that-shows-life-quote-jk-rowling-1.jpg"
   }
 ]

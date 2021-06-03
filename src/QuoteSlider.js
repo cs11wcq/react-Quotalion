@@ -30,10 +30,10 @@ authorList.forEach((obj) => {
 })
 
 const QuoteSlider = () => {
-  // const { category_id } = useParams()
-  const category_id = '2HB'
-  if (categoryQuoteMap.get(category_id) === undefined)
-    return <Error message={'category_id: ' + category_id + ' is invalid'} />
+
+  const { category_id } = useParams()
+  if (categoryQuoteMap.get(category_id) === undefined) return <Error message={'category_id: ' + category_id + ' is invalid'} />
+
   const quoteIds = categoryQuoteMap.get(category_id).quote_children
 
   const quoteObjects = quoteIds.map((quoteId) => {

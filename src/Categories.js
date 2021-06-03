@@ -7,7 +7,7 @@ import './css/index.css'
 function Categories() {
   return (
     <main>
-      <h3 style={{'color':'red'}}className='Categories'>categories</h3>
+      <h3 style={{'color':'blue'}}className='Categories'>categories</h3>
       <div></div>
       <section className='container'>
         {data.map((category) => {

@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Categories from './Categories'
 import Home from './Home'
 import QuoteSlider from './QuoteSlider'
-import ContextAPI from './contextapi'
 const ReactRouterSetup = () => {
   return (
     <Router>

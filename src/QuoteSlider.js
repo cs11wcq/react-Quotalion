@@ -1,14 +1,15 @@
 import React, { useState, useContext, useEffect } from 'react'
-import Quotes from './Quotes'
 import Quote from './Quote'
-import categoryQuoteJoin from './data/categoryQuoteJoin'
-import categoryList from './data/categoryList'
-import authorList from './data/authorList'
-import { allquotes } from './data/quoteList'
+import categoryQuoteJoin from './data/categoryQuoteJoin.json'
+import authorList from './data/authorList.json'
+import  allquotes  from './data/quoteList.json'
 import { Link, useParams } from 'react-router-dom'
 import Error from './Error'
 import QuoteContext from './QuoteContext'
+import categoryListJson from './data/categoryList.json'
 
+console.log('json ')
+console.log(categoryListJson)
 //k: category_id, v: object containing category_id and quote_children
 const categoryQuoteMap = new Map()
 //k: quote_id, v: object for that quote
@@ -21,7 +22,7 @@ categoryQuoteJoin.forEach((item) => {
 allquotes.forEach((item) => {
   quoteMap.set(item.quote_id, item)
 })
-categoryList.forEach((obj) => {
+categoryListJson.forEach((obj) => {
   categoryMap.set(obj.category_id, obj)
 })
 authorList.forEach((obj) => {

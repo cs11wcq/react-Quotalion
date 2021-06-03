@@ -1,6 +1,6 @@
 import logo from './logo.svg'
 import Category from './Category'
-import data from './data/categoryList'
+import data from './data/categoryList.json'
 import { Link } from 'react-router-dom'
 import './css/index.css'
 

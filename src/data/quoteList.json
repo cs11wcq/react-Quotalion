@@ -128,4 +128,21 @@
     "date": 2021,
     "img": "https://i.pinimg.com/originals/91/46/5f/91465fc2712213d01772c4725c84a16d.jpg"
   }
+  ,
+  {
+    "categories": ["3C"],
+    "quote_id": "adong1",
+    "body": "You are trash at defense",
+    "author_id": "Alex",
+    "date": 2021,
+    "img": "https://st.depositphotos.com/1001201/1847/i/600/depositphotos_18471223-stock-photo-failure.jpg"
+  },
+{
+    "categories": ["3C"],
+    "quote_id": "adong2",
+    "body": "You are trash at offense",
+    "author_id": "Alex",
+    "date": 2021,
+    "img": "https://media.istockphoto.com/vectors/man-trying-to-shoot-a-basketball-into-a-hoop-he-completely-miss-and-vector-id1303771946?k=6&m=1303771946&s=612x612&w=0&h=yhcu5KEbvozesUNgslnV2Yv4uLBwncdCfOle6BES-Yg="
+  }
 ]

@@ -11,8 +11,8 @@
   },
   {
     "category_id": "3C",
-    "quote_children": [],
-    "author_children": []
+    "quote_children": ["adong1", "adong2"],
+    "author_children": ["Alex"]
   },
 
   {

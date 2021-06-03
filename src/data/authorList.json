@@ -37,5 +37,12 @@
       { "category_id": "1A", "children": ["cb"] },
       { "category_id": "6Motivation", "children": ["cb", "cb1"] }
     ]
+  },
+  {
+    "author_id": "Alex",
+    "name": "Alex Dong",
+    "quote_children": [
+      { "category_id": "3C", "children": ["adong1", "adong2"] }
+    ]
   }
 ]

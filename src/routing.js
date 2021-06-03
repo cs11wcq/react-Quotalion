@@ -1,6 +1,6 @@
 import React from 'react'
 // react router
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import Categories from './Categories'
 import Home from './Home'
 import QuoteSlider from './QuoteSlider'

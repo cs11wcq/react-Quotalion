@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from 'react'
 import Quote from './Quote'
 import categoryQuoteJoin from './data/categoryQuoteJoin.json'
 import authorList from './data/authorList.json'
-import  allquotes  from './data/quoteList.json'
+import allquotes from './data/quoteList.json'
 import { Link, useParams } from 'react-router-dom'
 import Error from './Error'
 import QuoteContext from './QuoteContext'
@@ -30,8 +30,10 @@ authorList.forEach((obj) => {
 })
 
 const QuoteSlider = () => {
-  const { category_id } = useParams()
-  if (categoryQuoteMap.get(category_id) === undefined) return <Error />
+  // const { category_id } = useParams()
+  const category_id = '2HB'
+  if (categoryQuoteMap.get(category_id) === undefined)
+    return <Error message={'category_id: ' + category_id + ' is invalid'} />
   const quoteIds = categoryQuoteMap.get(category_id).quote_children
 
   const quoteObjects = quoteIds.map((quoteId) => {

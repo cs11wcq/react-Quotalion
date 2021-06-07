@@ -1,7 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react'
-import categoryQuoteJoin from './data/categoryQuoteJoin'
 import { Link, useParams } from 'react-router-dom'
-import allquotes from './data/quoteList'
 import AppContext from './AppContext'
 
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa'

@@ -7,7 +7,7 @@ import { Link, useParams } from 'react-router-dom'
 import Error from './Error'
 import QuoteContext from './QuoteContext'
 import categoryListJson from './data/categoryList.json'
-
+import QuoteAdd from './QuoteAdd'
 console.log('json ')
 console.log(categoryListJson)
 //k: category_id, v: object containing category_id and quote_children
@@ -30,9 +30,9 @@ authorList.forEach((obj) => {
 })
 
 const QuoteSlider = () => {
-
   const { category_id } = useParams()
-  if (categoryQuoteMap.get(category_id) === undefined) return <Error message={'category_id: ' + category_id + ' is invalid'} />
+  if (categoryQuoteMap.get(category_id) === undefined)
+    return <Error message={'category_id: ' + category_id + ' is invalid'} />
 
   const quoteIds = categoryQuoteMap.get(category_id).quote_children
 
@@ -48,10 +48,12 @@ const QuoteSlider = () => {
   })
   console.log(authorObjects)
   return (
-    <QuoteContext.Provider value={{ quoteObjects, quoteMap, authorMap }}>
+    <QuoteContext.Provider value={{ quoteObjects, quoteMap, authorMap, categoryQuoteMap, authorList, categoryQuoteJoin, allquotes }}>
       <main>
         <h2>
-          <Link to='/'>Home</Link>
+          <Link style={{ color: 'red' }} to='/'>
+            Home
+          </Link>
         </h2>
         {/* <h2>
           <Link to='/categories'>Categories</Link>
@@ -61,7 +63,9 @@ const QuoteSlider = () => {
             <h2>{categoryMap.get(category_id).category} quotes</h2>
             <div className='underline'></div>
           </div>
-          <div></div>
+          <div>
+            <QuoteAdd category_id={category_id}/>
+          </div>
           <List category_id={category_id} authorObjects={authorObjects} />
         </section>
       </main>
@@ -94,10 +98,10 @@ const List = ({ category_id, authorObjects }) => {
   return (
     //each child is an array of quote ids
     <>
-      {children.map((child) => {
+      {children.map((child, ind) => {
         //author's quotes for the current category
         return (
-          <Quote key={new Date().getTime().toString()} authorQuotes={child} />
+          <Quote key={ind} authorQuotes={child} />
         )
       })}
     </>

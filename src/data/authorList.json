@@ -2,17 +2,17 @@
   {
     "author_id": "Henry",
     "name": "Henry",
-    "quote_children": [{ "category_id": "1A", "children": ["1a", "2b"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["1a", "2b"] }]
   },
   {
     "author_id": "Seth",
     "name": "Seth K",
-    "quote_children": [{ "category_id": "1A", "children": ["3c"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["3c"] }]
   },
   {
     "author_id": "Rick",
     "name": "Rick Riordan",
-    "quote_children": [
+    "quoteChildren": [
       { "category_id": "2HB", "children": ["4d", "r2", "r3"] },
       { "category_id": "5FR", "children": ["r4", "r5"] }
     ]
@@ -20,7 +20,7 @@
   {
     "author_id": "Marilyn",
     "name": "Marilyn Monroe",
-    "quote_children": [
+    "quoteChildren": [
       { "category_id": "2HB", "children": ["m1", "m2", "m3", "5e"] },
       { "category_id": "5FR", "children": ["m4", "m3"] }
     ]
@@ -28,12 +28,12 @@
   {
     "author_id": "Nicholas",
     "name": "Nicholas Sparks",
-    "quote_children": [{ "category_id": "2HB", "children": ["6f"] }]
+    "quoteChildren": [{ "category_id": "2HB", "children": ["6f"] }]
   },
   {
     "author_id": "Charles",
     "name": "Charles Barkley",
-    "quote_children": [
+    "quoteChildren": [
       { "category_id": "1A", "children": ["cb"] },
       { "category_id": "6Motivation", "children": ["cb", "cb1"] }
     ]
@@ -41,7 +41,7 @@
   {
     "author_id": "Alex Dong",
     "name": "Alex Dong",
-    "quote_children": [
+    "quoteChildren": [
       { "category_id": "3C", "children": ["Alex Dong1", "Alex Dong2"] }
     ]
   },
@@ -49,90 +49,90 @@
   {
     "author_id": "Ernie Banks",
     "name": "Ernie Banks",
-    "quote_children": [{ "category_id": "1A", "children": ["Ernie Banks1"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["Ernie Banks1"] }]
   },
   {
     "author_id": "Frank Gaines",
     "name": "Frank Gaines",
-    "quote_children": [{ "category_id": "1A", "children": ["Frank Gaines1"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["Frank Gaines1"] }]
   },
   {
     "author_id": "Bruce Jenner",
     "name": "Bruce Jenner",
-    "quote_children": [{ "category_id": "1A", "children": ["Bruce Jenner1"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["Bruce Jenner1"] }]
   },
   {
     "author_id": "Mary Retton",
     "name": "Mary Retton",
-    "quote_children": [{ "category_id": "1A", "children": ["Mary Retton1"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["Mary Retton1"] }]
   },
   {
     "author_id": "Pat Tyson",
     "name": "Pat Tyson",
-    "quote_children": [{ "category_id": "1A", "children": ["Pat Tyson1"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["Pat Tyson1"] }]
   },
   {
     "author_id": "Larry Brown",
     "name": "Larry Brown",
-    "quote_children": [{ "category_id": "1A", "children": ["Larry Brown1"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["Larry Brown1"] }]
   },
   {
     "author_id": "Ken Doherty",
     "name": "Ken Doherty",
-    "quote_children": [{ "category_id": "1A", "children": ["Ken Doherty1"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["Ken Doherty1"] }]
   },
   {
     "author_id": "Laird Hamilton",
     "name": "Laird Hamilton",
-    "quote_children": [{ "category_id": "1A", "children": ["Laird Hamilton1"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["Laird Hamilton1"] }]
   },
   {
     "author_id": "Sandy Koufax",
     "name": "Sandy Koufax",
-    "quote_children": [{ "category_id": "1A", "children": ["Sandy Koufax1"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["Sandy Koufax1"] }]
   },
   {
     "author_id": "Arthur Ashe",
     "name": "Arthur Ashe",
-    "quote_children": [{ "category_id": "1A", "children": ["Arthur Ashe1"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["Arthur Ashe1"] }]
   },
   {
     "author_id": "Andre Agassi",
     "name": "Andre Agassi",
-    "quote_children": [{ "category_id": "1A", "children": ["Andre Agassi1"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["Andre Agassi1"] }]
   },
   {
     "author_id": "Pele",
     "name": "Pele",
-    "quote_children": [{ "category_id": "1A", "children": ["Pele1"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["Pele1"] }]
   },
 
   {
     "author_id": "Cal Ripken Jr",
     "name": "Cal Ripken Jr",
-    "quote_children": [{ "category_id": "1A", "children": ["Cal Ripken Jr1"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["Cal Ripken Jr1"] }]
   },
   {
     "author_id": "Chris Evert",
     "name": "Chris Evert",
-    "quote_children": [{ "category_id": "1A", "children": ["Chris Evert1"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["Chris Evert1"] }]
   },
   {
     "author_id": "Arnold Schwarzenegger",
     "name": "Arnold Schwarzenegger",
-    "quote_children": [
+    "quoteChildren": [
       { "category_id": "1A", "children": ["Arnold Schwarzenegger1"] }
     ]
   },
   {
     "author_id": "Arnold Palmer",
     "name": "Arnold Palmer",
-    "quote_children": [{ "category_id": "1A", "children": ["Arnold Palmer1"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["Arnold Palmer1"] }]
   },
   {
     "author_id": "Michael Jordan",
     "name": "Michael Jordan",
-    "quote_children": [
+    "quoteChildren": [
       {
         "category_id": "1A",
         "children": ["Michael Jordan1", "Michael Jordan2"]
@@ -142,45 +142,45 @@
   {
     "author_id": "Picabo Street",
     "name": "Picabo Street",
-    "quote_children": [{ "category_id": "1A", "children": ["Picabo Street1"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["Picabo Street1"] }]
   },
   {
     "author_id": "Lou Brock",
     "name": "Lou Brock",
-    "quote_children": [{ "category_id": "1A", "children": ["Lou Brock1"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["Lou Brock1"] }]
   },
   {
     "author_id": "Gordie Howe",
     "name": "Gordie Howe",
-    "quote_children": [{ "category_id": "1A", "children": ["Gordie Howe1"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["Gordie Howe1"] }]
   },
   {
     "author_id": "Pat Riley",
     "name": "Pat Riley",
-    "quote_children": [{ "category_id": "1A", "children": ["Pat Riley1"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["Pat Riley1"] }]
   },
   {
     "author_id": "Dean Smith",
     "name": "Dean Smith",
-    "quote_children": [{ "category_id": "1A", "children": ["Dean Smith1"] }]
+    "quoteChildren": [{ "category_id": "1A", "children": ["Dean Smith1"] }]
   },
 
   {
     "author_id": "Winston Churchill",
     "name": "Winston Churchill",
-    "quote_children": [
+    "quoteChildren": [
       { "category_id": "4D", "children": ["Winston Churchill1"] }
     ]
   },
   {
     "author_id": "Steve Jobs",
     "name": "Steve Jobs",
-    "quote_children": [{ "category_id": "4D", "children": ["Steve Jobs1"] }]
+    "quoteChildren": [{ "category_id": "4D", "children": ["Steve Jobs1"] }]
   },
   {
     "author_id": "Zhuangzi",
     "name": "Zhuangzi",
-    "quote_children": [
+    "quoteChildren": [
       {
         "category_id": "4D",
         "children": ["Zhuangzi1", "Zhuangzi2", "Zhuangzi3"]
@@ -190,7 +190,7 @@
   {
     "author_id": "Laozi",
     "name": "Laozi",
-    "quote_children": [
+    "quoteChildren": [
       {
         "category_id": "4D",
         "children": [
@@ -211,19 +211,19 @@
   {
     "author_id": "Sun Tzu",
     "name": "Sun Tzu",
-    "quote_children": [
+    "quoteChildren": [
       { "category_id": "4D", "children": ["Sun Tzu1", "Sun Tzu2", "Sun Tzu3"] }
     ]
   },
   {
     "author_id": "Aristotle",
     "name": "Aristotle",
-    "quote_children": [{ "category_id": "4D", "children": ["Aristotle1"] }]
+    "quoteChildren": [{ "category_id": "4D", "children": ["Aristotle1"] }]
   },
   {
     "author_id": "Albus DumbleDore",
     "name": "Albus DumbleDore",
-    "quote_children": [
+    "quoteChildren": [
       { "category_id": "4D", "children": ["Albus DumbleDore1"] }
     ]
   }

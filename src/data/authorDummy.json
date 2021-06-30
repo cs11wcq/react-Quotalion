@@ -1,0 +1,33 @@
+{
+  "Author-xjgty6pivzhw7f3sixrnjvhrqa-dev": [
+  {
+    "PutRequest": {
+     "Item": {
+       "id": {"S": "Henry"},
+       "name": {"S": "Henry"},
+       "quoteChildren": {
+        "L":
+         [{"M":  {"category_id": {"S": "1A"}, "children": {"SS": ["1a", "2b"] }}}]
+     }
+    }
+    } 
+  },
+  {
+   "PutRequest": {
+    "Item": {
+     "id": {"S": "Marilyn"},
+     "name": {"S": "Marilyn Monroe"},
+     "quoteChildren": {
+      "L": 
+       [{"M": {"category_id": {"S": "2HB"},
+        "children": {"SS": ["m1", "m2", "m3", "5e"]}}},
+        {"M": {"category_id": {"S": "5FR"},
+        "children": {"SS": ["m4", "m3"]}}}
+       ]
+     }
+    }
+   }
+  }
+ ]
+}
+

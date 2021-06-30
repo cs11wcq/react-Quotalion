@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-reactquotalion-dev-130449-authRole",
+      "UnauthRoleArn": "arn:aws:iam::749415359885:role/amplify-reactquotalion-dev-130449-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::749415359885:role/amplify-reactquotalion-dev-130449-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-reactquotalion-dev-130449-deployment",
+      "UnauthRoleName": "amplify-reactquotalion-dev-130449-unauthRole",
+      "StackName": "amplify-reactquotalion-dev-130449",
+      "StackId": "arn:aws:cloudformation:us-west-2:749415359885:stack/amplify-reactquotalion-dev-130449/9a7ef150-d5f0-11eb-b74e-0a951e33e755",
+      "AmplifyAppId": "d2mjiyqlteb3fq"
+    },
+    "categories": {
+      "auth": {
+        "reactquotalion7209793a": {}
+      }
+    }
+  }
+}

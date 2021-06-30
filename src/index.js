@@ -5,6 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import Routing from './routing'
 import AppContext from './AppContext'
 import ContextAPI from './contextapi'
+
+//https://docs.amplify.aws/cli/graphql-transformer/connection
 ReactDOM.render(
   // <div>
   //   <ContextAPI />

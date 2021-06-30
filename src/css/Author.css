@@ -1,0 +1,16 @@
+
+
+.authorCard {
+  display: flex;
+  justify-content: start;
+  padding: 5px;
+}
+
+.authorList {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorTitle {
+  font-weight: bold;
+}

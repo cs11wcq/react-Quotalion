@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "reactquotalion",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authreactquotalion7209793a",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

@@ -10,7 +10,7 @@ import categoryListJson from './data/categoryList.json'
 import QuoteAdd from './QuoteAdd'
 console.log('json ')
 console.log(categoryListJson)
-//k: category_id, v: object containing category_id and quote_children
+//k: category_id, v: object containing category_id and quoteChildren
 const categoryQuoteMap = new Map()
 //k: quote_id, v: object for that quote
 const quoteMap = new Map()
@@ -34,7 +34,7 @@ const QuoteSlider = () => {
   if (categoryQuoteMap.get(category_id) === undefined)
     return <Error message={'category_id: ' + category_id + ' is invalid'} />
 
-  const quoteIds = categoryQuoteMap.get(category_id).quote_children
+  const quoteIds = categoryQuoteMap.get(category_id).quoteChildren
 
   const quoteObjects = quoteIds.map((quoteId) => {
     return quoteMap.get(quoteId)
@@ -48,7 +48,17 @@ const QuoteSlider = () => {
   })
   console.log(authorObjects)
   return (
-    <QuoteContext.Provider value={{ quoteObjects, quoteMap, authorMap, categoryQuoteMap, authorList, categoryQuoteJoin, allquotes }}>
+    <QuoteContext.Provider
+      value={{
+        quoteObjects,
+        quoteMap,
+        authorMap,
+        categoryQuoteMap,
+        authorList,
+        categoryQuoteJoin,
+        allquotes,
+      }}
+    >
       <main>
         <h2>
           <Link style={{ color: 'red' }} to='/'>
@@ -64,7 +74,7 @@ const QuoteSlider = () => {
             <div className='underline'></div>
           </div>
           <div>
-            <QuoteAdd category_id={category_id}/>
+            <QuoteAdd category_id={category_id} />
           </div>
           <List category_id={category_id} authorObjects={authorObjects} />
         </section>
@@ -78,7 +88,7 @@ const List = ({ category_id, authorObjects }) => {
 
   const q = authorObjects.map((author) => {
     //find the object whose category id matches
-    const v = author.quote_children.find((obj) => {
+    const v = author.quoteChildren.find((obj) => {
       return obj.category_id === category_id
     })
     console.log(v)
@@ -100,9 +110,7 @@ const List = ({ category_id, authorObjects }) => {
     <>
       {children.map((child, ind) => {
         //author's quotes for the current category
-        return (
-          <Quote key={ind} authorQuotes={child} />
-        )
+        return <Quote key={ind} authorQuotes={child} />
       })}
     </>
   )

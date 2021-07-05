@@ -7,7 +7,7 @@ import { Link, useParams } from 'react-router-dom'
 import Error from './Error'
 import QuoteContext from './QuoteContext'
 import categoryListJson from './data/categoryList.json'
-import QuoteAdd from './QuoteAdd'
+import QuoteAddToCategory from './QuoteAddToCategory'
 console.log('json ')
 console.log(categoryListJson)
 //k: category_id, v: object containing category_id and quoteChildren
@@ -74,7 +74,7 @@ const QuoteSlider = () => {
             <div className='underline'></div>
           </div>
           <div>
-            <QuoteAdd category_id={category_id} />
+            <QuoteAddToCategory category_id={category_id} />
           </div>
           <List category_id={category_id} authorObjects={authorObjects} />
         </section>

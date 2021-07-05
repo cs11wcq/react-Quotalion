@@ -2,21 +2,14 @@
 // this is an auto generated file. This will be overwritten
 
 export const onCreateTopic = /* GraphQL */ `
-  subscription OnCreateTopic {
-    onCreateTopic {
+  subscription OnCreateTopic($owner: String) {
+    onCreateTopic(owner: $owner) {
       id
       title
       description
-      quotes {
-        items {
-          id
-          topicId
-          quoteId
-          createdAt
-          updatedAt
-        }
-        nextToken
-      }
+      createdAt
+      updatedAt
+      owner
       tags {
         items {
           id
@@ -24,30 +17,33 @@ export const onCreateTopic = /* GraphQL */ `
           tagId
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
-      createdAt
-      updatedAt
+      quotes {
+        items {
+          id
+          topicId
+          quoteId
+          createdAt
+          updatedAt
+          owner
+        }
+        nextToken
+      }
     }
   }
 `;
 export const onUpdateTopic = /* GraphQL */ `
-  subscription OnUpdateTopic {
-    onUpdateTopic {
+  subscription OnUpdateTopic($owner: String) {
+    onUpdateTopic(owner: $owner) {
       id
       title
       description
-      quotes {
-        items {
-          id
-          topicId
-          quoteId
-          createdAt
-          updatedAt
-        }
-        nextToken
-      }
+      createdAt
+      updatedAt
+      owner
       tags {
         items {
           id
@@ -55,30 +51,33 @@ export const onUpdateTopic = /* GraphQL */ `
           tagId
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
-      createdAt
-      updatedAt
+      quotes {
+        items {
+          id
+          topicId
+          quoteId
+          createdAt
+          updatedAt
+          owner
+        }
+        nextToken
+      }
     }
   }
 `;
 export const onDeleteTopic = /* GraphQL */ `
-  subscription OnDeleteTopic {
-    onDeleteTopic {
+  subscription OnDeleteTopic($owner: String) {
+    onDeleteTopic(owner: $owner) {
       id
       title
       description
-      quotes {
-        items {
-          id
-          topicId
-          quoteId
-          createdAt
-          updatedAt
-        }
-        nextToken
-      }
+      createdAt
+      updatedAt
+      owner
       tags {
         items {
           id
@@ -86,19 +85,45 @@ export const onDeleteTopic = /* GraphQL */ `
           tagId
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
-      createdAt
-      updatedAt
+      quotes {
+        items {
+          id
+          topicId
+          quoteId
+          createdAt
+          updatedAt
+          owner
+        }
+        nextToken
+      }
     }
   }
 `;
 export const onCreateTag = /* GraphQL */ `
-  subscription OnCreateTag {
-    onCreateTag {
+  subscription OnCreateTag($owner: String) {
+    onCreateTag(owner: $owner) {
       id
       tag
+      createdAt
+      updatedAt
+      owner
+      quotes {
+        items {
+          id
+          body
+          type
+          likeCount
+          imageUrl
+          createdAt
+          updatedAt
+          owner
+        }
+        nextToken
+      }
       topics {
         items {
           id
@@ -106,30 +131,34 @@ export const onCreateTag = /* GraphQL */ `
           tagId
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
-      quotes {
-        items {
-          id
-          body
-          type
-          likeCount
-          createdAt
-          updatedAt
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
     }
   }
 `;
 export const onUpdateTag = /* GraphQL */ `
-  subscription OnUpdateTag {
-    onUpdateTag {
+  subscription OnUpdateTag($owner: String) {
+    onUpdateTag(owner: $owner) {
       id
       tag
+      createdAt
+      updatedAt
+      owner
+      quotes {
+        items {
+          id
+          body
+          type
+          likeCount
+          imageUrl
+          createdAt
+          updatedAt
+          owner
+        }
+        nextToken
+      }
       topics {
         items {
           id
@@ -137,30 +166,34 @@ export const onUpdateTag = /* GraphQL */ `
           tagId
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
-      quotes {
-        items {
-          id
-          body
-          type
-          likeCount
-          createdAt
-          updatedAt
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
     }
   }
 `;
 export const onDeleteTag = /* GraphQL */ `
-  subscription OnDeleteTag {
-    onDeleteTag {
+  subscription OnDeleteTag($owner: String) {
+    onDeleteTag(owner: $owner) {
       id
       tag
+      createdAt
+      updatedAt
+      owner
+      quotes {
+        items {
+          id
+          body
+          type
+          likeCount
+          imageUrl
+          createdAt
+          updatedAt
+          owner
+        }
+        nextToken
+      }
       topics {
         items {
           id
@@ -168,44 +201,37 @@ export const onDeleteTag = /* GraphQL */ `
           tagId
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
-      quotes {
-        items {
-          id
-          body
-          type
-          likeCount
-          createdAt
-          updatedAt
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
     }
   }
 `;
 export const onCreateQuote = /* GraphQL */ `
-  subscription OnCreateQuote {
-    onCreateQuote {
+  subscription OnCreateQuote($owner: String) {
+    onCreateQuote(owner: $owner) {
       id
       body
       type
       likeCount
+      imageUrl
+      createdAt
+      updatedAt
       tag {
         id
         tag
-        topics {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         quotes {
           nextToken
         }
-        createdAt
-        updatedAt
+        topics {
+          nextToken
+        }
       }
+      owner
       topics {
         items {
           id
@@ -213,33 +239,37 @@ export const onCreateQuote = /* GraphQL */ `
           quoteId
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
-      createdAt
-      updatedAt
     }
   }
 `;
 export const onUpdateQuote = /* GraphQL */ `
-  subscription OnUpdateQuote {
-    onUpdateQuote {
+  subscription OnUpdateQuote($owner: String) {
+    onUpdateQuote(owner: $owner) {
       id
       body
       type
       likeCount
+      imageUrl
+      createdAt
+      updatedAt
       tag {
         id
         tag
-        topics {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         quotes {
           nextToken
         }
-        createdAt
-        updatedAt
+        topics {
+          nextToken
+        }
       }
+      owner
       topics {
         items {
           id
@@ -247,33 +277,37 @@ export const onUpdateQuote = /* GraphQL */ `
           quoteId
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
-      createdAt
-      updatedAt
     }
   }
 `;
 export const onDeleteQuote = /* GraphQL */ `
-  subscription OnDeleteQuote {
-    onDeleteQuote {
+  subscription OnDeleteQuote($owner: String) {
+    onDeleteQuote(owner: $owner) {
       id
       body
       type
       likeCount
+      imageUrl
+      createdAt
+      updatedAt
       tag {
         id
         tag
-        topics {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         quotes {
           nextToken
         }
-        createdAt
-        updatedAt
+        topics {
+          nextToken
+        }
       }
+      owner
       topics {
         items {
           id
@@ -281,242 +315,265 @@ export const onDeleteQuote = /* GraphQL */ `
           quoteId
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
-      createdAt
-      updatedAt
     }
   }
 `;
 export const onCreateTopicTag = /* GraphQL */ `
-  subscription OnCreateTopicTag {
-    onCreateTopicTag {
+  subscription OnCreateTopicTag($owner: String) {
+    onCreateTopicTag(owner: $owner) {
       id
       topicId
       tagId
+      createdAt
+      updatedAt
       topic {
         id
         title
         description
-        quotes {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         tags {
           nextToken
         }
-        createdAt
-        updatedAt
+        quotes {
+          nextToken
+        }
       }
       tag {
         id
         tag
-        topics {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         quotes {
           nextToken
         }
-        createdAt
-        updatedAt
+        topics {
+          nextToken
+        }
       }
-      createdAt
-      updatedAt
+      owner
     }
   }
 `;
 export const onUpdateTopicTag = /* GraphQL */ `
-  subscription OnUpdateTopicTag {
-    onUpdateTopicTag {
+  subscription OnUpdateTopicTag($owner: String) {
+    onUpdateTopicTag(owner: $owner) {
       id
       topicId
       tagId
+      createdAt
+      updatedAt
       topic {
         id
         title
         description
-        quotes {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         tags {
           nextToken
         }
-        createdAt
-        updatedAt
+        quotes {
+          nextToken
+        }
       }
       tag {
         id
         tag
-        topics {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         quotes {
           nextToken
         }
-        createdAt
-        updatedAt
+        topics {
+          nextToken
+        }
       }
-      createdAt
-      updatedAt
+      owner
     }
   }
 `;
 export const onDeleteTopicTag = /* GraphQL */ `
-  subscription OnDeleteTopicTag {
-    onDeleteTopicTag {
+  subscription OnDeleteTopicTag($owner: String) {
+    onDeleteTopicTag(owner: $owner) {
       id
       topicId
       tagId
+      createdAt
+      updatedAt
       topic {
         id
         title
         description
-        quotes {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         tags {
           nextToken
         }
-        createdAt
-        updatedAt
+        quotes {
+          nextToken
+        }
       }
       tag {
         id
         tag
-        topics {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         quotes {
           nextToken
         }
-        createdAt
-        updatedAt
+        topics {
+          nextToken
+        }
       }
-      createdAt
-      updatedAt
+      owner
     }
   }
 `;
 export const onCreateTopicQuote = /* GraphQL */ `
-  subscription OnCreateTopicQuote {
-    onCreateTopicQuote {
+  subscription OnCreateTopicQuote($owner: String) {
+    onCreateTopicQuote(owner: $owner) {
       id
       topicId
       quoteId
+      createdAt
+      updatedAt
       topic {
         id
         title
         description
-        quotes {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         tags {
           nextToken
         }
-        createdAt
-        updatedAt
+        quotes {
+          nextToken
+        }
       }
       quote {
         id
         body
         type
         likeCount
+        imageUrl
+        createdAt
+        updatedAt
         tag {
           id
           tag
           createdAt
           updatedAt
+          owner
         }
+        owner
         topics {
           nextToken
         }
-        createdAt
-        updatedAt
       }
-      createdAt
-      updatedAt
+      owner
     }
   }
 `;
 export const onUpdateTopicQuote = /* GraphQL */ `
-  subscription OnUpdateTopicQuote {
-    onUpdateTopicQuote {
+  subscription OnUpdateTopicQuote($owner: String) {
+    onUpdateTopicQuote(owner: $owner) {
       id
       topicId
       quoteId
+      createdAt
+      updatedAt
       topic {
         id
         title
         description
-        quotes {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         tags {
           nextToken
         }
-        createdAt
-        updatedAt
+        quotes {
+          nextToken
+        }
       }
       quote {
         id
         body
         type
         likeCount
+        imageUrl
+        createdAt
+        updatedAt
         tag {
           id
           tag
           createdAt
           updatedAt
+          owner
         }
+        owner
         topics {
           nextToken
         }
-        createdAt
-        updatedAt
       }
-      createdAt
-      updatedAt
+      owner
     }
   }
 `;
 export const onDeleteTopicQuote = /* GraphQL */ `
-  subscription OnDeleteTopicQuote {
-    onDeleteTopicQuote {
+  subscription OnDeleteTopicQuote($owner: String) {
+    onDeleteTopicQuote(owner: $owner) {
       id
       topicId
       quoteId
+      createdAt
+      updatedAt
       topic {
         id
         title
         description
-        quotes {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         tags {
           nextToken
         }
-        createdAt
-        updatedAt
+        quotes {
+          nextToken
+        }
       }
       quote {
         id
         body
         type
         likeCount
+        imageUrl
+        createdAt
+        updatedAt
         tag {
           id
           tag
           createdAt
           updatedAt
+          owner
         }
+        owner
         topics {
           nextToken
         }
-        createdAt
-        updatedAt
       }
-      createdAt
-      updatedAt
+      owner
     }
   }
 `;

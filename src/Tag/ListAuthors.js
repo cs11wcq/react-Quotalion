@@ -1,17 +1,24 @@
 import { API, graphqlOperation } from 'aws-amplify'
 import { listTags } from '../graphql/queries'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import FollowAuthor from './FollowAuthor'
 import { Paper} from '@material-ui/core'
+import '../css/Author.css'
 
 const ListAuthors = () => {
  const [authors, setAuthors] = useState([])
  useEffect(() => {
    fetchAuthors()
- }, [authors])
+ }, [])
  const fetchAuthors = async () => {
    try {
-     const authorData = await API.graphql(graphqlOperation(listTags))
+     //ref: https://docs.amplify.aws/lib/graphqlapi/authz/q/platform/js#using-amplify-graphql-client
+     //use IAM auth mode instead of default cognito mode
+     const authorData = await API.graphql({
+       query: listTags,
+       variables: null,
+       authMode: 'AWS_IAM',
+     })
      console.log(authorData.data)
      const authorList = authorData.data.listTags.items
      setAuthors(authorList)
@@ -20,15 +27,28 @@ const ListAuthors = () => {
      console.log('error on fetching authors', error)
    }
  }
+
+ 
  return (
    <div className='authorList'>
      {authors.map((author, idx) => {
+       const link = () => {
+         window.open(`/author/${author.tag}`, '_self')
+       }
        return (
-         <Paper variant='outlined' elevation={2} key={`author${idx}`}>
+         <Paper
+           onClick={link}
+           className='paper'
+           variant='outlined'
+           key={`author${idx}`}
+         >
            <div className='authorCard'>
-             <div className='authorName'>Author: {author.tag}</div>
-             
-             <FollowAuthor />
+             <div className='authorName'>
+               <h2>Tag: {author.tag}</h2>
+             </div>
+             <span style={{ display: 'block' }}>
+               <FollowAuthor />
+             </span>
            </div>
          </Paper>
        )

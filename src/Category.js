@@ -3,8 +3,9 @@ import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
 import { Link, useParams } from 'react-router-dom'
 const Category = ({ ...category }) => {
   const [expand, setExpand] = useState(false)
-  const changeExpand = (event) => {
+  const changeExpand = (event, id) => {
     event.stopPropagation()
+    // console.log("id: " + id);
     setExpand(!expand)
   }
   const link = () => {
@@ -33,8 +34,13 @@ const Category = ({ ...category }) => {
         <div className='icon-right'>{category.icon}</div>
         {elipses()}
         {expand && category.info}
-        {/* {expand && <WebLink category={category} />} */}
-        <button className='btn' onClick={changeExpand}>
+        {/* tip: https://stackoverflow.com/questions/43155329/pass-multiple-parameters-to-event-handlers-in-react*/}
+        <button
+          className='btn'
+          onClick={(e) => {
+            changeExpand(e, 0)
+          }}
+        >
           {expand ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </button>
       </span>

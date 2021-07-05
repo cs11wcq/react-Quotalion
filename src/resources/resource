@@ -1,0 +1,26 @@
+article dad printed about graphql schema many to many
+https://rangle.io/blog/creating-a-useful-graphql-server-using-aws-amplify/
+
+
+many-to-many-relations-in-aws-amplify-using-react-321
+https://geekyants.com/blog/many-to-many-relations-in-aws-amplify-using-react-321
+
+
+if appsync isn't working, change from cognito user pools to IAM
+https://stackoverflow.com/questions/49020612/appsync-return-401-errors-when-connecting-with-cognito
+
+    "aws_cognito_region": "us-west-2",
+    "aws_user_pools_id": "us-west-2_92wcygZqi",
+
+
+auth issues... amplify update api
+https://github.com/aws-amplify/amplify-cli/issues/2396
+
+
+Note: for auth, used cognito, then IAM, then API key (use SPACE). To get key, go to  appsync settings, choose api key as default auth mode and select key
+api key: da2-2dq3ouavbvbv3hilfw2xlijvla
+https://us-west-2.console.aws.amazon.com/appsync/home?region=us-west-2#/xjgty6pivzhw7f3sixrnjvhrqa/v1/settings
+
+
+for auth issues where user can only see his own posts, read here (emma)
+https://github.com/aws-amplify/amplify-cli/issues/2373

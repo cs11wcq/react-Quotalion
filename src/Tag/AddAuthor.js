@@ -16,9 +16,8 @@ const AddAuthor = () => {
  }
  return (
    <div className='addAuthor'>
-     <h1>Add author</h1>
      <input type='text' onChange={(e) => setAuthor(e.target.value)} />
-     <button onClick={() => addAuthor()}>Add Author</button>
+     <button onClick={() => addAuthor()}>Add Tag</button>
    </div>
  )
 }

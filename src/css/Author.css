@@ -2,10 +2,14 @@
 
 .authorCard {
   display: flex;
-  justify-content: start;
+  justify-content: space-around;
   padding: 5px;
+
 }
 
+.paper :hover{
+  color: aqua;
+}
 .authorList {
   display: flex;
   flex-direction: column;
@@ -13,4 +17,8 @@
 
 .authorTitle {
   font-weight: bold;
+}
+
+.FollowAuthor {
+  width: 200px;
 }

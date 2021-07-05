@@ -10,7 +10,7 @@ export const LineItem = item => <li key={uuid()}>{item}</li>
 
 export const List = () => array.map(item => <LineItem item={item} />)
 */
-const QuoteAdd = ({category_id}) => {
+const QuoteAddToCategory = ({ category_id }) => {
   const quoteContext = useContext(QuoteContext)
   const [quote, setQuote] = useState('')
   const [author, setAuthor] = useState('')
@@ -84,7 +84,7 @@ const QuoteAdd = ({category_id}) => {
   )
 }
 
-export default QuoteAdd
+export default QuoteAddToCategory
 
 // class QuoteAdd extends React.Component {
 //   constructor(props) {

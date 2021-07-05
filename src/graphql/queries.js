@@ -7,16 +7,9 @@ export const getTopic = /* GraphQL */ `
       id
       title
       description
-      quotes {
-        items {
-          id
-          topicId
-          quoteId
-          createdAt
-          updatedAt
-        }
-        nextToken
-      }
+      createdAt
+      updatedAt
+      owner
       tags {
         items {
           id
@@ -24,11 +17,21 @@ export const getTopic = /* GraphQL */ `
           tagId
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
-      createdAt
-      updatedAt
+      quotes {
+        items {
+          id
+          topicId
+          quoteId
+          createdAt
+          updatedAt
+          owner
+        }
+        nextToken
+      }
     }
   }
 `;
@@ -43,14 +46,15 @@ export const listTopics = /* GraphQL */ `
         id
         title
         description
-        quotes {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         tags {
           nextToken
         }
-        createdAt
-        updatedAt
+        quotes {
+          nextToken
+        }
       }
       nextToken
     }
@@ -61,6 +65,22 @@ export const getTag = /* GraphQL */ `
     getTag(id: $id) {
       id
       tag
+      createdAt
+      updatedAt
+      owner
+      quotes {
+        items {
+          id
+          body
+          type
+          likeCount
+          imageUrl
+          createdAt
+          updatedAt
+          owner
+        }
+        nextToken
+      }
       topics {
         items {
           id
@@ -68,22 +88,10 @@ export const getTag = /* GraphQL */ `
           tagId
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
-      quotes {
-        items {
-          id
-          body
-          type
-          likeCount
-          createdAt
-          updatedAt
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -97,14 +105,15 @@ export const listTags = /* GraphQL */ `
       items {
         id
         tag
-        topics {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         quotes {
           nextToken
         }
-        createdAt
-        updatedAt
+        topics {
+          nextToken
+        }
       }
       nextToken
     }
@@ -117,18 +126,23 @@ export const getQuote = /* GraphQL */ `
       body
       type
       likeCount
+      imageUrl
+      createdAt
+      updatedAt
       tag {
         id
         tag
-        topics {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         quotes {
           nextToken
         }
-        createdAt
-        updatedAt
+        topics {
+          nextToken
+        }
       }
+      owner
       topics {
         items {
           id
@@ -136,11 +150,10 @@ export const getQuote = /* GraphQL */ `
           quoteId
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -156,17 +169,20 @@ export const listQuotes = /* GraphQL */ `
         body
         type
         likeCount
+        imageUrl
+        createdAt
+        updatedAt
         tag {
           id
           tag
           createdAt
           updatedAt
+          owner
         }
+        owner
         topics {
           nextToken
         }
-        createdAt
-        updatedAt
       }
       nextToken
     }
@@ -194,17 +210,20 @@ export const getTopicsByCreatedAtDate = /* GraphQL */ `
         body
         type
         likeCount
+        imageUrl
+        createdAt
+        updatedAt
         tag {
           id
           tag
           createdAt
           updatedAt
+          owner
         }
+        owner
         topics {
           nextToken
         }
-        createdAt
-        updatedAt
       }
       nextToken
     }

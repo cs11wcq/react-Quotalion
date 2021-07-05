@@ -1,6 +1,16 @@
-type Topic @model 
-
-{
+type Topic
+  @model
+  @auth(
+    rules: [
+      # allow all authenticated users ability to create posts
+      # allow owners ability to update and delete their posts
+      { allow: owner }
+      # allow all authenticated users to read posts
+      { allow: private, provider: iam, operations: [read] }
+      # allow all guest users (not authenticated) to read posts
+      { allow: public, provider: iam, operations: [read] }
+    ]
+  ) {
   id: ID!
   title: String!
   description: String
@@ -8,16 +18,36 @@ type Topic @model
   tags: [TopicTag] @connection(keyName: "byTopic", fields: ["id"])
 }
 
-type Tag @model
-  {
+type Tag
+  @model
+  @auth(
+    rules: [
+      # allow all authenticated users ability to create posts
+      # allow owners ability to update and delete their posts
+      { allow: owner }
+      # allow all authenticated users to read posts
+      { allow: private, provider: iam, operations: [read] }
+      # allow all guest users (not authenticated) to read posts
+      { allow: public, provider: apiKey, operations: [read] }
+    ]
+  ) {
   id: ID!
   tag: String!
   topics: [TopicTag] @connection(keyName: "byTag", fields: ["id"])
   quotes: [Quote] @connection(keyName: "TagQuotes")
-  
 }
 
 type Quote
+  @auth(
+    rules: [
+      # allow all authenticated users ability to create posts
+      # allow owners ability to update and delete their posts
+      { allow: owner }
+      # allow all authenticated users to read posts
+      { allow: private, provider: iam, operations: [read] }
+      # allow all guest users (not authenticated) to read posts
+    ]
+  )
   @model
   @key(
     name: "byCreateAtDate"
@@ -27,7 +57,8 @@ type Quote
   id: ID!
   body: String!
   type: String!
-  likeCount: Int!
+  likeCount: Int
+  imageUrl: String
   tag: Tag @connection(keyName: "TagQuotes")
   topics: [TopicQuote] @connection(keyName: "byQuote", fields: ["id"])
   createdAt: AWSDateTime!
@@ -35,11 +66,20 @@ type Quote
 
 
 
-type TopicTag 
+type TopicTag
+  @auth(
+    rules: [
+      # allow all authenticated users ability to create posts
+      # allow owners ability to update and delete their posts
+      { allow: owner }
+      # allow all authenticated users to read posts
+      { allow: private, provider: iam, operations: [read] }
+      # allow all guest users (not authenticated) to read posts
+    ]
+  )
   @model(queries: null)
   @key(name: "byTopic", fields: ["topicId", "tagId"])
-  @key(name: "byTag", fields: ["tagId", "topicId"])
-{
+  @key(name: "byTag", fields: ["tagId", "topicId"]) {
   id: ID!
   topicId: ID!
   tagId: ID!
@@ -48,6 +88,16 @@ type TopicTag
 }
 
 type TopicQuote
+  @auth(
+    rules: [
+      # allow all authenticated users ability to create posts
+      # allow owners ability to update and delete their posts
+      { allow: owner }
+      # allow all authenticated users to read posts
+      { allow: private, provider: iam, operations: [read] }
+      # allow all guest users (not authenticated) to read posts
+    ]
+  )
   @model(queries: null)
   @key(name: "byTopic", fields: ["topicId", "quoteId"])
   @key(name: "byQuote", fields: ["quoteId", "topicId"]) {

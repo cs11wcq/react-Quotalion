@@ -10,16 +10,9 @@ export const createTopic = /* GraphQL */ `
       id
       title
       description
-      quotes {
-        items {
-          id
-          topicId
-          quoteId
-          createdAt
-          updatedAt
-        }
-        nextToken
-      }
+      createdAt
+      updatedAt
+      owner
       tags {
         items {
           id
@@ -27,11 +20,21 @@ export const createTopic = /* GraphQL */ `
           tagId
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
-      createdAt
-      updatedAt
+      quotes {
+        items {
+          id
+          topicId
+          quoteId
+          createdAt
+          updatedAt
+          owner
+        }
+        nextToken
+      }
     }
   }
 `;
@@ -44,16 +47,9 @@ export const updateTopic = /* GraphQL */ `
       id
       title
       description
-      quotes {
-        items {
-          id
-          topicId
-          quoteId
-          createdAt
-          updatedAt
-        }
-        nextToken
-      }
+      createdAt
+      updatedAt
+      owner
       tags {
         items {
           id
@@ -61,11 +57,21 @@ export const updateTopic = /* GraphQL */ `
           tagId
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
-      createdAt
-      updatedAt
+      quotes {
+        items {
+          id
+          topicId
+          quoteId
+          createdAt
+          updatedAt
+          owner
+        }
+        nextToken
+      }
     }
   }
 `;
@@ -78,16 +84,9 @@ export const deleteTopic = /* GraphQL */ `
       id
       title
       description
-      quotes {
-        items {
-          id
-          topicId
-          quoteId
-          createdAt
-          updatedAt
-        }
-        nextToken
-      }
+      createdAt
+      updatedAt
+      owner
       tags {
         items {
           id
@@ -95,11 +94,21 @@ export const deleteTopic = /* GraphQL */ `
           tagId
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
-      createdAt
-      updatedAt
+      quotes {
+        items {
+          id
+          topicId
+          quoteId
+          createdAt
+          updatedAt
+          owner
+        }
+        nextToken
+      }
     }
   }
 `;
@@ -111,6 +120,22 @@ export const createTag = /* GraphQL */ `
     createTag(input: $input, condition: $condition) {
       id
       tag
+      createdAt
+      updatedAt
+      owner
+      quotes {
+        items {
+          id
+          body
+          type
+          likeCount
+          imageUrl
+          createdAt
+          updatedAt
+          owner
+        }
+        nextToken
+      }
       topics {
         items {
           id
@@ -118,22 +143,10 @@ export const createTag = /* GraphQL */ `
           tagId
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
-      quotes {
-        items {
-          id
-          body
-          type
-          likeCount
-          createdAt
-          updatedAt
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -145,6 +158,22 @@ export const updateTag = /* GraphQL */ `
     updateTag(input: $input, condition: $condition) {
       id
       tag
+      createdAt
+      updatedAt
+      owner
+      quotes {
+        items {
+          id
+          body
+          type
+          likeCount
+          imageUrl
+          createdAt
+          updatedAt
+          owner
+        }
+        nextToken
+      }
       topics {
         items {
           id
@@ -152,22 +181,10 @@ export const updateTag = /* GraphQL */ `
           tagId
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
-      quotes {
-        items {
-          id
-          body
-          type
-          likeCount
-          createdAt
-          updatedAt
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -179,6 +196,22 @@ export const deleteTag = /* GraphQL */ `
     deleteTag(input: $input, condition: $condition) {
       id
       tag
+      createdAt
+      updatedAt
+      owner
+      quotes {
+        items {
+          id
+          body
+          type
+          likeCount
+          imageUrl
+          createdAt
+          updatedAt
+          owner
+        }
+        nextToken
+      }
       topics {
         items {
           id
@@ -186,22 +219,10 @@ export const deleteTag = /* GraphQL */ `
           tagId
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
-      quotes {
-        items {
-          id
-          body
-          type
-          likeCount
-          createdAt
-          updatedAt
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -215,18 +236,23 @@ export const createQuote = /* GraphQL */ `
       body
       type
       likeCount
+      imageUrl
+      createdAt
+      updatedAt
       tag {
         id
         tag
-        topics {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         quotes {
           nextToken
         }
-        createdAt
-        updatedAt
+        topics {
+          nextToken
+        }
       }
+      owner
       topics {
         items {
           id
@@ -234,11 +260,10 @@ export const createQuote = /* GraphQL */ `
           quoteId
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -252,18 +277,23 @@ export const updateQuote = /* GraphQL */ `
       body
       type
       likeCount
+      imageUrl
+      createdAt
+      updatedAt
       tag {
         id
         tag
-        topics {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         quotes {
           nextToken
         }
-        createdAt
-        updatedAt
+        topics {
+          nextToken
+        }
       }
+      owner
       topics {
         items {
           id
@@ -271,11 +301,10 @@ export const updateQuote = /* GraphQL */ `
           quoteId
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -289,18 +318,23 @@ export const deleteQuote = /* GraphQL */ `
       body
       type
       likeCount
+      imageUrl
+      createdAt
+      updatedAt
       tag {
         id
         tag
-        topics {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         quotes {
           nextToken
         }
-        createdAt
-        updatedAt
+        topics {
+          nextToken
+        }
       }
+      owner
       topics {
         items {
           id
@@ -308,11 +342,10 @@ export const deleteQuote = /* GraphQL */ `
           quoteId
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -325,33 +358,36 @@ export const createTopicTag = /* GraphQL */ `
       id
       topicId
       tagId
+      createdAt
+      updatedAt
       topic {
         id
         title
         description
-        quotes {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         tags {
           nextToken
         }
-        createdAt
-        updatedAt
+        quotes {
+          nextToken
+        }
       }
       tag {
         id
         tag
-        topics {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         quotes {
           nextToken
         }
-        createdAt
-        updatedAt
+        topics {
+          nextToken
+        }
       }
-      createdAt
-      updatedAt
+      owner
     }
   }
 `;
@@ -364,33 +400,36 @@ export const updateTopicTag = /* GraphQL */ `
       id
       topicId
       tagId
+      createdAt
+      updatedAt
       topic {
         id
         title
         description
-        quotes {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         tags {
           nextToken
         }
-        createdAt
-        updatedAt
+        quotes {
+          nextToken
+        }
       }
       tag {
         id
         tag
-        topics {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         quotes {
           nextToken
         }
-        createdAt
-        updatedAt
+        topics {
+          nextToken
+        }
       }
-      createdAt
-      updatedAt
+      owner
     }
   }
 `;
@@ -403,33 +442,36 @@ export const deleteTopicTag = /* GraphQL */ `
       id
       topicId
       tagId
+      createdAt
+      updatedAt
       topic {
         id
         title
         description
-        quotes {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         tags {
           nextToken
         }
-        createdAt
-        updatedAt
+        quotes {
+          nextToken
+        }
       }
       tag {
         id
         tag
-        topics {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         quotes {
           nextToken
         }
-        createdAt
-        updatedAt
+        topics {
+          nextToken
+        }
       }
-      createdAt
-      updatedAt
+      owner
     }
   }
 `;
@@ -442,38 +484,43 @@ export const createTopicQuote = /* GraphQL */ `
       id
       topicId
       quoteId
+      createdAt
+      updatedAt
       topic {
         id
         title
         description
-        quotes {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         tags {
           nextToken
         }
-        createdAt
-        updatedAt
+        quotes {
+          nextToken
+        }
       }
       quote {
         id
         body
         type
         likeCount
+        imageUrl
+        createdAt
+        updatedAt
         tag {
           id
           tag
           createdAt
           updatedAt
+          owner
         }
+        owner
         topics {
           nextToken
         }
-        createdAt
-        updatedAt
       }
-      createdAt
-      updatedAt
+      owner
     }
   }
 `;
@@ -486,38 +533,43 @@ export const updateTopicQuote = /* GraphQL */ `
       id
       topicId
       quoteId
+      createdAt
+      updatedAt
       topic {
         id
         title
         description
-        quotes {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         tags {
           nextToken
         }
-        createdAt
-        updatedAt
+        quotes {
+          nextToken
+        }
       }
       quote {
         id
         body
         type
         likeCount
+        imageUrl
+        createdAt
+        updatedAt
         tag {
           id
           tag
           createdAt
           updatedAt
+          owner
         }
+        owner
         topics {
           nextToken
         }
-        createdAt
-        updatedAt
       }
-      createdAt
-      updatedAt
+      owner
     }
   }
 `;
@@ -530,38 +582,43 @@ export const deleteTopicQuote = /* GraphQL */ `
       id
       topicId
       quoteId
+      createdAt
+      updatedAt
       topic {
         id
         title
         description
-        quotes {
-          nextToken
-        }
+        createdAt
+        updatedAt
+        owner
         tags {
           nextToken
         }
-        createdAt
-        updatedAt
+        quotes {
+          nextToken
+        }
       }
       quote {
         id
         body
         type
         likeCount
+        imageUrl
+        createdAt
+        updatedAt
         tag {
           id
           tag
           createdAt
           updatedAt
+          owner
         }
+        owner
         topics {
           nextToken
         }
-        createdAt
-        updatedAt
       }
-      createdAt
-      updatedAt
+      owner
     }
   }
 `;

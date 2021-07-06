@@ -2,6 +2,8 @@
 import { Link } from 'react-router-dom'
 import React, { useState, useContext, useEffect } from 'react'
 import uuid from 'react-uuid'
+import {createQuote} from '../graphql/mutations'
+import { API, graphqlOperation } from 'aws-amplify'
 /*
 const array = ['one', 'two', 'three']
 
@@ -9,9 +11,9 @@ export const LineItem = item => <li key={uuid()}>{item}</li>
 
 export const List = () => array.map(item => <LineItem item={item} />)
 */
-const AddQuoteForTag = ({ category_id }) => {
+const AddQuoteForTag = ({ author_name }) => {
   const [quote, setQuote] = useState('')
-  const [author, setAuthor] = useState('')
+  const [author, setAuthor] = useState(author_name)
   const [image, setImage] = useState('')
   const [date, setDate] = useState('')
 
@@ -21,19 +23,30 @@ const AddQuoteForTag = ({ category_id }) => {
     if (quote && author) {
       //quoteMap, authorMap, categoryQuoteMap
       //authorList, categoryQuoteJoin, allquotes
+      addQuote()
     } else {
       window.alert('Please enter a valid quote')
     }
   }
   const reset = () => {
     setQuote('')
-    setAuthor('')
     setImage('')
     setDate('')
   }
+
+  const addQuote = async () => {
+    try {
+      const quo = { body: author, type: 'QUOTE', imageUrl: image,  }
+      const data = await API.graphql(
+        graphqlOperation(createQuote, { input: quo })
+      )
+    } catch (error) {
+      console.log('error trying to add quote', error)
+    }
+  }
   return (
     <article>
-      <form className='form' onSubmit={handleSubmit} onReset={reset}>
+      <form className='form' onSubmit={handleSubmit}>
         <div className='form-control'>
           <label htmlFor='quote'>Quote: </label>
           <textarea
@@ -51,7 +64,7 @@ const AddQuoteForTag = ({ category_id }) => {
             id='firstName'
             name='firstName'
             value={author}
-            onChange={(e) => setAuthor(e.target.value)}
+            // onChange={(e) => setAuthor(e.target.value)}
           />
         </div>
         <div className='form-control'>
@@ -64,7 +77,7 @@ const AddQuoteForTag = ({ category_id }) => {
             onChange={(e) => setImage(e.target.value)}
           />
         </div>
-        <div className='form-control'>
+        {/* <div className='form-control'>
           <label htmlFor='date'>Date: </label>
           <input
             type='date'
@@ -73,9 +86,10 @@ const AddQuoteForTag = ({ category_id }) => {
             value={date}
             onChange={(e) => setDate(e.target.value)}
           />
-        </div>
+        </div> */}
         <button type='submit'>Add quote</button>
-        <button type='reset'>Cancel</button>
+        {/* <button type='reset'>Cancel</button> */}
+        <button onClick={()=>reset()}>Cancel</button>
       </form>
     </article>
   )

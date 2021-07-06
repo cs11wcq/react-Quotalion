@@ -36,7 +36,7 @@ const QuotesByTag = () => {
         <h2>Quotes by {author_name}</h2>
         <span style={{ display: 'block' }}>
           <FollowAuthor />
-          <AddQuoteForTag/>
+          <AddQuoteForTag author_name={author_name}/>
         </span>
       </div>
       {/* <AddAuthor />

@@ -50,10 +50,16 @@ type Quote
   )
   @model
   @key(
-    name: "byCreateAtDate"
+    name: "byCreatedAtDate"
     fields: ["type", "createdAt"]
     queryField: "getTopicsByCreatedAtDate"
-  ) {
+  ) 
+  @key(
+    name: "byTag"
+    fields: ["tag", "createdAt"]
+    queryField: "getQuotesByTag"
+  )
+  {
   id: ID!
   body: String!
   type: String!

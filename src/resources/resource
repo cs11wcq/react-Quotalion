@@ -24,3 +24,5 @@ https://us-west-2.console.aws.amazon.com/appsync/home?region=us-west-2#/xjgty6pi
 
 for auth issues where user can only see his own posts, read here (emma)
 https://github.com/aws-amplify/amplify-cli/issues/2373
+
+changed for redux1 branch
